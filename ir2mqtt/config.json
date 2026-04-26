@@ -4,7 +4,7 @@
   "slug": "ir2mqtt",
   "description": "Web UI for IR Bridges with Learning and MQTT Auto-Discovery",
   "url": "https://github.com/steelcuts/ir2mqtt",
-  "image": "ghcr.io/steelcuts/ir2mqtt",
+  "image": "ghcr.io/steelcuts/ir2mqtt-ha-app",
   "arch": [
     "aarch64",
     "amd64",
