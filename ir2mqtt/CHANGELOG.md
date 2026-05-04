@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.0.0-beta.4] - 2026-05-05
+
+### Fixed
+- IRDB import: extended protocol mappings cover more NEC/SIRC/Samsung variants;
+  CSV parsing guard no longer drops rows with device = 0 (fixes missing codes
+  for Denon AV receivers and similar)
+- WebSocket zombie connections on hot-reload caused flash messages to fire
+  multiple times
+
+### Added
+- Import statistics: flash message after DB update shows remotes, codes
+  imported, and skipped count with per-provider breakdown in backend logs
+- IRDB disclaimer now includes a WIP notice with a GitHub issues link
+- `APP_PORT` env var makes the HTTP port configurable (default: 8099)
+
+### Documentation
+- Hardware setup: high-power IR transmitter module tip (1W ready-made module),
+  transistor vs. MOSFET comparison for the amplifier circuit
+- `APP_PORT` documented in dev-setup and hardware setup guides
+- IR database: updated protocol mapping table, sharp/rca remain unsupported
+  (ESPHome limitation)
+
 ## [1.0.0-beta.3] - 2026-05-03
 
 ### Fixed
